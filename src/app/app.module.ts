@@ -9,7 +9,7 @@ import { EventHandlingComponent } from './event-handling/event-handling.componen
 
 import { RouterModule, Routes } from '@angular/router';
 import { RouterPage1Component } from './router-page1/router-page1.component';
-import { RouterPage2Component } from './router-page1/router-page2/router-page2.component'
+import { RouterPage2Component } from './router-page2/router-page2/router-page2.component'
 
 const appRoutes: Routes = [
   {path:'routeToPage1' , component: router-page1},
