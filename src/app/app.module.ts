@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ProductComponent } from './product/product.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import { BookFormComponentComponent } from './book-form-component/book-form-component.component';
 
 const appRoutes: Routes = [
   {path: 'routerpage1' , component: ProductComponent},
@@ -19,7 +20,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports:[ BrowserModule, FormsModule,RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, HelloComponent, customDirective, EventHandlingComponent, ProductComponent, InventoryComponent ],
+  declarations: [ AppComponent, HelloComponent, customDirective, EventHandlingComponent, ProductComponent, InventoryComponent, BookFormComponentComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
