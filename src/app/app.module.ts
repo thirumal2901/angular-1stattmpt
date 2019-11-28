@@ -8,20 +8,18 @@ import { customDirective } from './customDirective/customDirective.component';
 import { EventHandlingComponent } from './event-handling/event-handling.component'
 
 import { RouterModule, Routes } from '@angular/router';
-import { RouterPage1Component } from './routerpage1/routerpage1.component';
-import { RouterPage2Component } from './routerpage2/routerpage2.component';
+
+import { ProductComponent } from './product/product.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 const appRoutes: Routes = [
-  {path: 'routeToPage1' , component: RouterPage1Component},
-  {path: 'routeToPage2' , component: RouterPage2Component}
+  {path: 'routerpage1' , component: ProductComponent},
+  {path: 'routerpage2' , component: InventoryComponent}
 ]
-
-
-
 
 @NgModule({
   imports:[ BrowserModule, FormsModule,RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, HelloComponent, customDirective, EventHandlingComponent, RouterPage1Component, RouterPage2Component ],
+  declarations: [ AppComponent, HelloComponent, customDirective, EventHandlingComponent, ProductComponent, InventoryComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
