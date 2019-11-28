@@ -1,0 +1,15 @@
+<h3> ngIf </h3>
+<div *ngIf = "appTitleStatus"> true means display orelse hide </div>
+
+
+<h3> ngFor</h3>
+
+<div *ngFor = 'let lst of appList'> 
+  <ul>
+    <li>{{lst.ID}}</li>
+    <li>{{lst.Name}}</li>
+    <img [src]="lst.url">
+  </ul>
+</div>
+
+
